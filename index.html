@@ -11,7 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
 
     <!-- NAVIGATION BAR -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -22,18 +22,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Logo</a>
+                <a class="navbar-brand" href="#home">Logo</a>
             </div>
             <div class="collapse navbar-collapse" id="theNav">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#services">SERVICES</a></li>
                     <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#pricing">PRICING</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
-
         </nav>
     </nav>
 
@@ -48,10 +47,9 @@
     <div id="about" class="container-fluid">
         <div class="row">
             <div class="col-sm-8">
-                <h2>ABOUT ...</h2>
+                <h2>ABOUT PAGE</h2>
                 <h4>Some h4 header ...</h4>
                 <p>Some text ...</p>
-                <button class="btn btn-default btn-lg">Get in touch</button>
             </div>
             <div class="col-sm-4">
                 <span class="glyphicon glyphicon-flash logo"></span>
@@ -61,26 +59,26 @@
     </div>
 
     <!-- CONTAINER FLUID SECTION -->
-    <div class="container-fluid bg-grey">
+    <!-- <div class="container-fluid bg-grey">
         <div class="row">
             <div class="col-sm-4">
-                <span class="glyphicon glyphicon-globe logo"></span>
+                <span class="glyphicon glyphicon-globe logo slideanim"></span>
             </div>
             <div class="col-sm-8">
-                <h2>Values</h2>
+                <h2>VALUES PAGE</h2>
                 <p><strong>STRONG: </strong> this text ... </p>
                 <p><strong>STRONG: </strong> this text ...</p>
             </div>
         </div>
 
-    </div>
+    </div> -->
 
     <!-- CONTAINER FLUID SECTION -->
-    <div id="services" class="container-fluid text-center">
-        <h2>SERVICES</h2>
+    <div id="services" class="container-fluid text-center bg-grey">
+        <h2>SERVICES PAGE</h2>
         <h4>What we offer</h4>
         <br>
-        <div class="row">
+        <div class="row slideanim">
             <div class="col-sm-4">
                 <span class="glyphicon glyphicon-off logo-small"></span>
                 <h4>H4 Header</h4>
@@ -96,7 +94,9 @@
                 <h4>H4 Header</h4>
                 <P>Some text here ... </P>
             </div>
-            <br><br>
+        </div>
+        <br><br>
+        <div class="row slideanim">
             <div class="col-sm-4">
                 <span class="glyphicon glyphicon-leaf logo-small"></span>
                 <h4>H4 Header</h4>
@@ -116,10 +116,10 @@
     </div>
 
     <!-- CONTAINER FLUID SECTION -->
-    <div id="portfolio" class="container-fluid text-center bg-grey">
-        <h2>Portfolio</h2>
+    <div id="portfolio" class="container-fluid text-center">
+        <h2>PORTFOLIO PAGE</h2>
         <h4>Some Header h4 here ... </h4>
-        <div class="row text-center">
+        <div class="row text-center slideanim">
             <div class="col-sm-4">
                 <div class="thumbnail">
                     <img src="images/therapy.jpg" alt="therapy">
@@ -141,7 +141,7 @@
         </div>
 
         <!-- CAROUSEL -->
-        <h2>H2 header here</h2>
+        <h2>What my customers think</h2>
         <div id="spinner" class="carousel slide text-center" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#spinner" data-slide-to="0" class="active"></li>
@@ -157,7 +157,7 @@
                     <h4>Really happy with experience.<br><span class="carouselText">Shane O' Rourke, Soccer player</span></h4>
                 </div>
                 <div class="item">
-                    <h4>Recommend to anyone that needs relief from injury. <span class="item">John Dory, Trainer</span></h4>
+                    <h4>Recommend to anyone that <br>needs relief from injury.<br><span class="item">John Dory, Trainer</span></h4>
                 </div>
             </div>
 
@@ -174,71 +174,78 @@
     </div>
 
     <!-- CONTAINER FLUID SECTION -->
-    <div id="pricing" class="container-fluid">
+    <div id="pricing" class="container-fluid bg-grey">
         <div class="text-center">
-            <h2>h2 header</h2>
+            <h2>TYPES PAGE</h2>
             <h4>h4 header</h4>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                    <h1>H1 heading</h1>
+        <div class="row slideanim">
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>H1 heading</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p>Some text here ...</p>
+                        <p>Some text here ...</p>
+                        <p>Some text here ...</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>h3 text here</h3>
+                        <h4>h4 text here</h4>
+                        <button class="btn btn-lg">Sign up</button>
+                    </div>
                 </div>
             </div>
-            <div class="panel-body">
-                <p>Some text here ...</p>
-            </div>
-            <div class="panel-footer">
-                <h3>h3 text here</h3>
-                <h4>h4 text here</h4>
-                <button class="btn btn-lg">Sign up</button>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                    <h1>H1 heading</h1>
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>H1 heading</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p>Some text here ...</p>
+                        <p>Some text here ...</p>
+                        <p>Some text here ...</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>h3 text here</h3>
+                        <h4>h4 text here</h4>
+                        <button class="btn btn-lg">Sign up</button>
+                    </div>
                 </div>
             </div>
-            <div class="panel-body">
-                <p>Some text here ...</p>
-            </div>
-            <div class="panel-footer">
-                <h3>h3 text here</h3>
-                <h4>h4 text here</h4>
-                <button class="btn btn-lg">Sign up</button>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                    <h1>H1 heading</h1>
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>H1 heading</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p>Some text here ...</p>
+                        <p>Some text here ...</p>
+                        <p>Some text here ...</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>h3 text here</h3>
+                        <h4>h4 text here</h4>
+                        <button class="btn btn-lg">Sign up</button>
+                    </div>
                 </div>
             </div>
-            <div class="panel-body">
-                <p>Some text here ...</p>
-            </div>
-            <div class="panel-footer">
-                <h3>h3 text here</h3>
-                <h4>h4 text here</h4>
-                <button class="btn btn-lg">Sign up</button>
-            </div>
         </div>
+
     </div>
 
     <!-- CONTAINER FLUID SECTION -->
-    <div id="contact" class="container-fluid bg-grey">
-        <h2 class="text-center">CONTACT</h2>
+    <div id="contact" class="container-fluid">
+        <h2 class="text-center">CONTACT PAGE</h2>
         <div class="row">
             <div class="col-sm-5">
                 <p>Contact me and I'll get back to you within 24 hours.</p>
-                <p><span class="glyphicon glyphicon-map-marker"> Killybegs,IE</span></p>
+                <p><span class="glyphicon glyphicon-map-marker"> Killybegs, Co.Donegal, IE</span></p>
                 <p><span class="glyphicon glyphicon-phone"> 087123456789</span></p>
                 <p><span class="glyphicon glyphicon-envelope"> test@email.com</span></p>
             </div>
-            <div class="col-sm-7">
+            <div class="col-sm-7 slideanim">
                 <div class="row">
                     <div class="col-sm-6 form-group">
                         <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
@@ -265,7 +272,7 @@
             var myCenter = new google.maps.LatLng(54.6348, -8.4547);
             var mapProp = {
                 center: myCenter,
-                zoom: 12,
+                zoom: 15,
                 scrollwheel: false,
                 draggable: false,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -279,12 +286,46 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm4t7WmtVwD8g5fODlPzt02P28kN3u2lA&callback=myMap"></script>
 
+    <!-- SMOOTH SCROLLING -->
+    <script>
+        $(document).ready(function () {
+            $(".navbar a, footer a[href='#home'], .btn").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 700, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        })
+
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    </script>
+
+    <script>
+        function go_to_contact_info() {
+            location.href = "#contact";
+        }
+    </script>
+
     <!-- FOOTER -->
-    <footer class="container-fluid text-center">
-        <a href="#top" title="Home">
+    <footer class="container-fluid text-center bg-grey">
+        <a href="#home" title="Home">
             <span class="glyphicon glyphicon-chevron-up"></span>
         </a>
-        <p class="text-right">Created by Shane O' Rourke</p>
+        <p class="text-center author">Created by Shane O' Rourke</p>
     </footer>
 
 </body>
