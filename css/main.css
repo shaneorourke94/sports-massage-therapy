@@ -21,7 +21,7 @@ h4 {
 }
 
 .jumbotron {
-    background-color: hsl(151, 77%, 69%);
+    background-color: #72D8F9;
     color: #ffffff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
@@ -36,7 +36,7 @@ h4 {
 }
 
 .logo {
-    color: hsl(151, 77%, 69%);;
+    color: #72D8F9;
     font-size: 200px;
 }
 
@@ -49,7 +49,7 @@ h4 {
 }
 
 .logo-small {
-    color: hsl(151, 77%, 69%);;
+    color: #72D8F9;
     font-size: 50px;
 }
 
@@ -78,15 +78,15 @@ h4 {
 
 .carousel-control.right, .carousel-control.left {
     background-image: none;
-    color: hsl(151, 77%, 69%);
+    color: #72D8F9;
 }
 
 .carousel-indicators li {
-    border-color: hsl(151, 77%, 69%);;
+    border-color: #72D8F9;
 }
 
 .carousel-indicators li.active {
-    border-color: hsl(151, 77%, 69%);
+    border-color: #72D8F9;
 }
 
 .item h4 {
@@ -102,7 +102,7 @@ h4 {
 }
 
 .panel {
-    border: 1px solid hsl(151, 77%, 69%);
+    border: 1px solid #72D8F9;
     border-radius: 0;
     transition: box-shadow 0.5s;
 }
@@ -112,14 +112,14 @@ h4 {
 }
 
 .panel-footer .btn:hover {
-    border: 1px solid hsl(151, 77%, 69%);
+    border: 1px solid #72D8F9;
     background-color: #fff !important;
-    color: hsl(151, 77%, 69%);
+    color: #72D8F9;
 }
 
 .panel-heading {
     color: #fff !important;
-    background-color: hsl(151, 77%, 69%) !important;
+    background-color: #72D8F9 !important;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -143,7 +143,7 @@ h4 {
 
 .panel-footer .btn {
     margin: 15px 0;
-    background-color: hsl(151, 77%, 69%);
+    background-color: #72D8F9;
     color: #fff;
 }
 
@@ -154,7 +154,7 @@ h4 {
 
 .navbar {
     margin-bottom: 0;
-    background-color: hsl(151, 77%, 69%);
+    background-color: #72D8F9;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -169,7 +169,7 @@ h4 {
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: hsl(151, 77%, 69%) !important;
+    color: #72D8F9 !important;
     background-color: #fff !important;
 }
 
@@ -181,7 +181,7 @@ h4 {
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: hsl(151, 77%, 69%);
+    color: #72D8F9;
 }
 
 .author {
@@ -202,7 +202,7 @@ footer .glyphicon {
 
 @keyframes slide {
     0% {
-        opacity: 0;
+        opacity: 0.1;
         transform: translateY(70%);
     } 
     100% {
@@ -212,7 +212,7 @@ footer .glyphicon {
 }
 @-webkit-keyframes slide {
     0% {
-        opacity: 0;
+        opacity: 0.1;
         -webkit-transform: translateY(70%);
     } 
     100% {
