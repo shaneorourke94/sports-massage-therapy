@@ -1,7 +1,30 @@
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
 .jumbotron {
     background-color: hsl(151, 77%, 69%);
     color: #ffffff;
     padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
 }
 
 .bg-grey {
@@ -15,6 +38,14 @@
 .logo {
     color: hsl(151, 77%, 69%);;
     font-size: 200px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
 }
 
 .logo-small {
@@ -82,19 +113,19 @@
 
 .panel-footer .btn:hover {
     border: 1px solid hsl(151, 77%, 69%);
-    background-color: hsl(151, 77%, 69%);
+    background-color: #fff !important;
     color: hsl(151, 77%, 69%);
 }
 
 .panel-heading {
-    color: hsl(151, 77%, 69%) !important;
+    color: #fff !important;
     background-color: hsl(151, 77%, 69%) !important;
-    padding: 25px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    
 }
 
 .panel-footer {
@@ -130,6 +161,7 @@
     line-height: 1.42857143 !important;
     letter-spacing: 4px;
     border-radius: 0;
+    font-family: Montserrat, sans-serif;
 }
 
 .navbar li a, .navbar .navbar-brand {
@@ -150,4 +182,41 @@ footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
     color: hsl(151, 77%, 69%);
+}
+
+.author {
+    color: #818181;
+}
+
+.slideanim {
+    visibility:hidden;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    visibility: visible; 
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
 }
