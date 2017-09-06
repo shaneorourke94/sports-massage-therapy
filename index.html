@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initiall-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -57,21 +58,6 @@
         </div>
 
     </div>
-
-    <!-- CONTAINER FLUID SECTION -->
-    <!-- <div class="container-fluid bg-grey">
-        <div class="row">
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-globe logo slideanim"></span>
-            </div>
-            <div class="col-sm-8">
-                <h2>VALUES PAGE</h2>
-                <p><strong>STRONG: </strong> this text ... </p>
-                <p><strong>STRONG: </strong> this text ...</p>
-            </div>
-        </div>
-
-    </div> -->
 
     <!-- CONTAINER FLUID SECTION -->
     <div id="services" class="container-fluid text-center bg-grey">
@@ -267,23 +253,6 @@
 
     <!-- GOOGLE MAPS -->
     <div id="googleMap"></div>
-    <script>
-        function myMap() {
-            var myCenter = new google.maps.LatLng(54.6348, -8.4547);
-            var mapProp = {
-                center: myCenter,
-                zoom: 15,
-                scrollwheel: false,
-                draggable: false,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-            var marker = new google.maps.Marker({
-                position: myCenter
-            });
-            marker.setMap(map);
-        }
-    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm4t7WmtVwD8g5fODlPzt02P28kN3u2lA&callback=myMap"></script>
 
     <!-- SMOOTH SCROLLING -->
@@ -312,12 +281,6 @@
                 }
             });
         });
-    </script>
-
-    <script>
-        function go_to_contact_info() {
-            location.href = "#contact";
-        }
     </script>
 
     <!-- FOOTER -->
