@@ -226,3 +226,7 @@ footer .glyphicon {
     width: 40px;
     height: 40px;
 }
+
+.nav_logo_margin {
+    margin: 8px 0 0 0 !important;
+}
