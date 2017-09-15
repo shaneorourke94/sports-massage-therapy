@@ -2,6 +2,7 @@ body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
+    height: 100%;
 }
 
 h1 {
@@ -31,14 +32,30 @@ h4 {
     font-family: Montserrat, sans-serif;
 }
 
-#headerImg {
-    background-size: 100% 100%;
+.headerImg {
+    background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
+    background-size: cover;
+    background-image: url("therapy.jpg");
 }
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  
 
 .bg-grey {
     background-color: #f6f6f6;
