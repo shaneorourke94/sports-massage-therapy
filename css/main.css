@@ -274,8 +274,9 @@ footer .glyphicon {
 }
 
 .gallery {
-    width: 60% !important;
-    height: 50% !important;
+    width: 550px !important;
+    height: 400px !important;
+    border-radius: 8px;
 }
 
 .nav_logo {
