@@ -47,3 +47,10 @@ $(window).scroll(function () {
         }
     });
 });
+
+function closeNav() {
+    $("#theNav").each(function() {
+        $(this).attr("aria-expanded", false);
+        $(this).attr("class", "navbar-collapse collapse");
+    });
+}
