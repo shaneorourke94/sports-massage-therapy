@@ -284,3 +284,53 @@ footer .glyphicon {
     margin: 8px 0 0 0 !important;
     color: #fff;
 }
+
+.media-btn {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+    -moz-border-radius: 0; 
+    -webkit-border-radius: 0; 
+    border-radius: 0;
+    -o-transition: all .4s; 
+    -moz-transition: all .4s; 
+    -webkit-transition: all .4s; 
+    -ms-transition: all .4s; 
+    transition: all .4s;
+}
+
+.media-size-64 {
+	width: 64px;
+	height: 64px;
+	margin: 10px;
+	padding-top: 16px;
+	font-size: 28px;
+	line-height: 28px;
+}
+
+.media-circle {
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+}
+
+.media-facebook { 
+    background: #4862a3;
+}
+.media-instagram { 
+    background: #3d6b92;
+ }
+
+.media-twitter { 
+    background: #55acee; 
+}
+
+.media-youtube { 
+    background: #bb0000; 
+}
+
+.media-skype { 
+    background: #00aff0; 
+}

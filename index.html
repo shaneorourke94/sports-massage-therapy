@@ -3,15 +3,15 @@
 
 <head>
     <title>Sports Massage Therapy</title>
+    <link rel="icon" href="images/cropped_logo.jpg" type="image/gif" sizes="16x16">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initiall-scale=1">
-    <link rel="icon" href="images/cropped_logo.jpg" type="image/gif" sizes="16x16">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -171,8 +171,8 @@
             <h2>SERVICES</h2>
             <h4>Range of massages available</h4>
         </div>
-        <div class="row slideanim">
-            <div class="col-sm-3 col-xs-12">
+        <div class="row">
+            <div class="col-sm-3 col-xs-12 slideanim">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <h1>Sports Cupping Massage</h1>
@@ -189,7 +189,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 col-xs-12">
+            <div class="col-sm-3 col-xs-12 slideanim">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <h1>Sports Massage</h1>
@@ -207,7 +207,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 col-xs-12">
+            <div class="col-sm-3 col-xs-12 slideanim">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <h1>Swedish Massage</h1>
@@ -225,7 +225,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 col-xs-12">
+            <div class="col-sm-3 col-xs-12 slideanim">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <h1>Deep Tissue Massage</h1>
@@ -274,7 +274,6 @@
                         <button class="btn btn-default pull-right" type="submit">Send</button>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -304,7 +303,7 @@
                 var pos = $(this).offset().top;
 
                 var winTop = $(window).scrollTop();
-                if (pos < winTop + 600) {
+                if (pos < winTop + 800) {
                     $(this).addClass("slide");
                 }
             });
@@ -313,11 +312,14 @@
 
     <!-- FOOTER -->
     <footer class="container-fluid text-center bg-grey">
-        <div class="container">
+        <div class="slideanim">
             <a href="#home" title="Home">
                 <span class="glyphicon glyphicon-chevron-up"></span>
             </a>
             <h3 class="text-center">AROUND THE WEB</h3>
+            <a href="#" class="btn media-btn media-size-64 media-circle media-facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="btn media-btn media-size-64 media-circle media-twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="btn media-btn media-size-64 media-circle media-instagram"><i class="fa fa-instagram"></i></a>
         </div>
     </footer>
 
