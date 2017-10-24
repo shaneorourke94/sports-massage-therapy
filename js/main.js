@@ -1,7 +1,7 @@
 
 var txtFile = "data/visitors.txt";
 var reader = new FileReader();
-reader.readAsText(txtFile, 1);
+//reader.readAsText(txtFile, 1);
 
 function go_to_contact_info() {
     location.href = "#contact";
@@ -53,4 +53,11 @@ function closeNav() {
         $(this).attr("aria-expanded", false);
         $(this).attr("class", "navbar-collapse collapse");
     });
+}
+
+function sendEmail() {
+    var name = $('name');
+    var emailAddress = $('emailAddress');
+    var comments = $('comments');
+    window.location.href = "mailto:shaneorourke88@hotmail.com?subject=TestSubject&body=TestBody";
 }
