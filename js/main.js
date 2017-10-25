@@ -56,8 +56,18 @@ function closeNav() {
 }
 
 function sendEmail() {
-    var name = $('name');
-    var emailAddress = $('emailAddress');
-    var comments = $('comments');
-    window.location.href = "mailto:shaneorourke88@hotmail.com?subject=TestSubject&body=TestBody";
+    var name = document.getElementById("name").nodeValue;
+    var emailAddress = document.getElementById("emailAddress").nodeValue;
+    var comments = document.getElementById("comments").nodeValue;
+    var beforeComments = comments.split(" ");
+    var afterComments;
+    for (var i = 0; i < beforeComments.length; i++) {
+        if (i % 6 == 0) {
+            beforeComments[i].concat("%0D");    
+        } else {
+            beforeComments[i].concat("%0A");
+        }
+        afterComments.concat(beforeComments[i]);
+    }
+    window.location.href = "mailto:shaneorourke88@hotmail.com?subject=TestSubject&body=" + afterComments;
 }
