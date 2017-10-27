@@ -24,7 +24,7 @@ function myMap() {
 }
 
 $(document).ready(function () {
-    $(".navbar a, footer a[href='#home'], .btn").on('click', function (event) {
+    $(".navbar a, footer a[href='#home'], button").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;
@@ -56,18 +56,18 @@ function closeNav() {
 }
 
 function sendEmail() {
-    var name = document.getElementById("name").nodeValue;
-    var emailAddress = document.getElementById("emailAddress").nodeValue;
-    var comments = document.getElementById("comments").nodeValue;
+    var name = document.getElementById("name").value;
+    var emailAddress = document.getElementById("emailAddress").value;
+    var comments = document.getElementById("comments").value;
     var beforeComments = comments.split(" ");
-    var afterComments;
+    var afterComments = "";
     for (var i = 0; i < beforeComments.length; i++) {
-        if (i % 6 == 0) {
-            beforeComments[i].concat("%0D");    
+        if (i > 0 && i % 14 == 0) {
+            beforeComments[i] += "%0D";
         } else {
-            beforeComments[i].concat("%0A");
+            beforeComments[i] += "%20";
         }
-        afterComments.concat(beforeComments[i]);
+        afterComments += beforeComments[i];
     }
     window.location.href = "mailto:shaneorourke88@hotmail.com?subject=TestSubject&body=" + afterComments;
 }
