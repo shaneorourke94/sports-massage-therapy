@@ -185,7 +185,7 @@
                     <div class="panel-footer">
                         <h3>€30</h3>
                         <h4>for 1 hour</h4>
-                        <button class="btn btn-lg">Book</button>
+                        <button onclick="go_to_contact_info();" class="btn btn-lg">Book</button>
                     </div>
                 </div>
             </div>
@@ -203,7 +203,7 @@
                     <div class="panel-footer">
                         <h3>€25</h3>
                         <h4>for 1 hour</h4>
-                        <button class="btn btn-lg">Book</button>
+                        <button onclick="go_to_contact_info();" class="btn btn-lg">Book</button>
                     </div>
                 </div>
             </div>
@@ -221,7 +221,7 @@
                     <div class="panel-footer">
                         <h3>€25</h3>
                         <h4>for 1 hour</h4>
-                        <button class="btn btn-lg">Book</button>
+                        <button onclick="go_to_contact_info();" class="btn btn-lg">Book</button>
                     </div>
                 </div>
             </div>
@@ -241,7 +241,7 @@
                     <div class="panel-footer">
                         <h3>€25</h3>
                         <h4>for 1 hour</h4>
-                        <button class="btn btn-lg">Book</button>
+                        <button onclick="go_to_contact_info();" class="btn btn-lg">Book</button>
                     </div>
                 </div>
             </div>
@@ -265,13 +265,13 @@
                         <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                     </div>
                     <div class="col-sm-6 form-group">
-                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                        <input type="text" class="form-control" id="emailAddress" name="email" placeholder="Email" required>
                     </div>
                 </div>
                 <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
                 <div class="row">
                     <div class="col-sm-12 form-group">
-                        <button class="btn btn-default pull-right" type="submit">Send</button>
+                        <button class="btn btn-default pull-right" onclick="sendEmail();">Send</button>
                     </div>
                 </div>
             </div>
