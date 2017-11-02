@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body onload="preLoader();">
+    <!-- PRELOADER  -->
+    <div id="loader"></div>
 
-    <div id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div id="home" class="animate-bottom" data-spy="scroll" data-target=".navbar" data-offset="60">
 
         <!-- NAVIGATION BAR -->
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -251,29 +253,27 @@
                     <p><span class="glyphicon glyphicon-envelope"> ryanward07@hotmail.com</span></p>
                 </div>
                 <div class="col-sm-7 slideanim">
-                    <form action="mailto:shaneorourke974@gmail.com" method="post" enctype="text/plain">
-                        <div class="row">
-                            <div class="col-sm-6 form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-                            </div>
-                            <div class="col-sm-6 form-group">
-                                <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
-                            </div>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                         </div>
-                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-                        <div class="row">
-                            <div class="col-sm-12 form-group">
-                                <input class="btn btn-default pull-right bg-grey" type="submit" value="Send">
-                            </div>
+                        <div class="col-sm-6 form-group">
+                            <input type="text" class="form-control" id="emailAddress" name="email" placeholder="Email" required>
                         </div>
-                    </form>
+                    </div>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button onclick="sendEmail();" class="btn btn-default pull-right bg-grey">Send</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- GOOGLE MAPS -->
         <div id="googleMap"></div>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm4t7WmtVwD8g5fODlPzt02P28kN3u2lA&callback=myMap"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm4t7WmtVwD8g5fODlPzt02P28kN3u2lA&callback=mapLoader"></script>
 
         <!-- SMOOTH SCROLLING -->
         <script>
