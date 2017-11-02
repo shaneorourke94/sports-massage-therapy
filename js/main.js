@@ -1,8 +1,3 @@
-
-var txtFile = "data/visitors.txt";
-var reader = new FileReader();
-//reader.readAsText(txtFile, 1);
-
 function go_to_contact_info() {
     location.href = "#contact";
 }
@@ -49,7 +44,7 @@ $(window).scroll(function () {
 });
 
 function closeNav() {
-    $("#theNav").each(function() {
+    $("#theNav").each(function () {
         $(this).attr("aria-expanded", false);
         $(this).attr("class", "navbar-collapse collapse");
     });
@@ -69,5 +64,5 @@ function sendEmail() {
         }
         afterComments += beforeComments[i];
     }
-    window.location.href = "mailto:shaneorourke88@hotmail.com?subject=TestSubject&body=" + afterComments;
+    window.location.href = "mailto:shaneorourke88@hotmail.com?subject=Sports%20Massage%20Therapy%20Email&body=" + afterComments;
 }

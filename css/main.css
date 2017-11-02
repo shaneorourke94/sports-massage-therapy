@@ -6,6 +6,13 @@ body {
     margin: 0;
 }
 
+#home {
+    line-height: 1.8;
+    color: #818181;
+    height: 100%;
+    margin: 0;
+}
+
 h1 {
     font-size: 26px;
 }
@@ -186,7 +193,7 @@ h4 {
 }
 
 .panel-footer .btn {
-    margin: 15px 0;
+    margin: 15px 0; 
     background-color: #72D8F9;
     color: #fff;
 }
