@@ -2,7 +2,11 @@ function go_to_contact_info() {
     location.href = "#contact";
 }
 
-function myMap() {
+function mapLoader() {
+    setTimeout(displayMap, 2000);
+}
+
+function displayMap() {
     var myCenter = new google.maps.LatLng(54.6348, -8.4547);
     var mapProp = {
         center: myCenter,
@@ -64,5 +68,14 @@ function sendEmail() {
         }
         afterComments += beforeComments[i];
     }
-    window.location.href = "mailto:shaneorourke88@hotmail.com?subject=Sports%20Massage%20Therapy%20Email&body=" + afterComments;
+    window.location.href = "mailto:ryanward07@hotmail.com?subject=Sports%20Massage%20Therapy&body=" + afterComments;
+}
+
+function preLoader() {
+    setTimeout(showPage, 1500);
+}
+
+function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("home").style.display = "block";
 }
